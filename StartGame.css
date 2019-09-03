@@ -1,0 +1,45 @@
+body{
+	display: ;
+	background-image: url(./Background.svg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	text-align:center;
+	vertical-align:center;
+	text-decoration:none;
+}
+
+.inline{
+	display:inline-block;
+}
+
+p{
+	color:#9c3111;
+	font-size:5em;
+	display:block;
+	text-decoration:none;
+}
+
+.start{
+	text-decoration:none;
+}
+
+input{
+	/*background-image:url(./block-06.svg);
+	background-repeat:no-repeat;
+	background-size:cover; */
+	background-color:#d1bd79;
+	border:0.4em solid #82553d;
+	height:3em;
+	margin-left:2em;
+
+}
+
+.flex{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.code:{
+	
+}
