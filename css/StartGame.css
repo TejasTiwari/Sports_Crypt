@@ -37,7 +37,7 @@ p {
 
 .start {
 	text-decoration:none;
-	margin-top:9vh;
+	margin-top:17vh;
 }
 
 input {
@@ -47,6 +47,10 @@ input {
 	color:#9c3111;
 	background-color:#d1bd79;
 	border:1vh solid #82553d;
+<<<<<<< HEAD:css/StartGame.css
+=======
+	padding:0 1vw;
+>>>>>>> fb4f90ea7f72545a8d90ac1f74cda3301ea91cee:StartGame.css
 	margin-left:2vw;
 }
 
