@@ -20,11 +20,12 @@ body{
 
 .inline{
 	display:inline-block;
+	margin-left:10vw;
 }
 
 p{
 	color:#9c3111;
-	font-size:5em;
+	font-size:11vh;
 	display:block;
 	text-decoration:none;
 }
