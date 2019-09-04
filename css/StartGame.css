@@ -3,6 +3,10 @@
 	src: url("../fonts/CaslonishFraxx.ttf");
 }
 
+a {
+	text-decoration: none;
+}
+
 body{
 	text-align:center;
 	font-family: caslonish;
@@ -46,16 +50,40 @@ p {
 	margin-top:17vh;
 }
 
-input {
+.input input, .input p {
 	width:9vw;
 	height:7vh;
-	font-size:4vh;
 	color:#9c3111;
 	background-color:#d1bd79;
 	border:1vh solid #82553d;
-	padding:0 1vw;
 	margin-left:4vw;
 	font-weight: 700;
+}
+
+.next {
+	position: fixed;
+	bottom: 23vh;
+	right: 22vw;
+}
+
+.next p {
+	padding: 0.8vw 1vw 0.5vw 1vw;
+	color:#9c3111;
+	background-color:#d1bd79;
+	border:1vh solid #82553d;
+	font-size: 3vw;
+}
+
+.input input {
+	font-size:4vh;
+	padding:0 1vw;
+}
+
+.input p {
+	font-size: 6vh;
+	letter-spacing: 1.5px;
+	text-align: center;
+	padding:0.5vw 1vw 0 1vw;
 }
 
 .flex {
