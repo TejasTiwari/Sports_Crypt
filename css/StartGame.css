@@ -1,5 +1,11 @@
+@font-face {
+	font-family: "caslonish";
+	src: url("../fonts/CaslonishFraxx.ttf");
+}
+
 body{
 	text-align:center;
+	font-family: caslonish;
 }
 
 .background {
@@ -41,24 +47,26 @@ p {
 }
 
 input {
-	width:12vw;
-	height:6vh;
+	width:9vw;
+	height:7vh;
 	font-size:4vh;
 	color:#9c3111;
 	background-color:#d1bd79;
 	border:1vh solid #82553d;
-<<<<<<< HEAD:css/StartGame.css
-=======
 	padding:0 1vw;
->>>>>>> fb4f90ea7f72545a8d90ac1f74cda3301ea91cee:StartGame.css
-	margin-left:2vw;
+	margin-left:4vw;
+	font-weight: 700;
 }
 
 .flex {
 	display:flex;
 	align-items:center;
-	justify-content:center;
+	justify-content:space-around;
 	margin-bottom:19vh;
+}
+
+.flex p {
+	margin-left: 0;
 }
 
 .code {
