@@ -3,12 +3,17 @@ body{
 }
 
 .background{
-	display: ;
 	background-image: url(./Background.svg);
 	background-repeat:no-repeat;
 	background-size: cover;
-	text-align:center;
-	vertical-align:center;
+	background-attachment:fixed;
+	background-position:center;
+	/*text-align:center;
+	vertical-align:center;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
 	text-decoration:none;
 	height:100vh;
 	width:100vw;
@@ -23,15 +28,19 @@ body{
 	margin-left:10vw;
 }
 
+.background > p {
+}
+
 p{
 	color:#9c3111;
 	font-size:11vh;
-	display:block;
 	text-decoration:none;
+	margin: 0;
 }
 
 .start{
 	text-decoration:none;
+	margin-top:9vh;
 }
 
 .input{
@@ -50,7 +59,7 @@ input{
 	z:0;
 	width:12vw;
 	height:6vh;
-	font-size:3.5em;
+	font-size:4vh;
 	color:#9c3111;
 	background-color:#d1bd79;
 	border:1vh solid #82553d;
@@ -62,6 +71,7 @@ input{
 	display:flex;
 	align-items:center;
 	justify-content:center;
+	margin-bottom:19vh;
 }
 
 .code{
