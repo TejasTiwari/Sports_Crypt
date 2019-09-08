@@ -1,7 +1,20 @@
 @font-face {
 	font-family: "caslonish";
-	src: url("../fonts/CaslonishFraxx.ttf");
+	src: url("../assets/fonts/CaslonishFraxx.ttf");
 }
+
+#rotate-prompt{
+	display: none;
+	visibility: hidden;
+	  width:75%;
+	  margin-top:40%;
+	  margin-left: 14%;
+	  color:white;
+	  text-align: center;
+  }
+  #rotate-prompt img{
+	margin-left:-20%;
+  }
 
 a {
 	text-decoration: none;
@@ -13,7 +26,7 @@ body{
 }
 
 .background {
-	background-image: url(../images/Background.svg);
+	background-image: url(../assets/images/Background.svg);
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-attachment:fixed;
@@ -101,4 +114,66 @@ p {
 	position:absolute;
 	top:35vh;
 	left:22vw;
+}
+
+.submit p{
+	width:6vw;
+	height:4vh;
+	position:absolute;
+	top:75vh;
+	right:25vw;
+	display:block;
+	color:#9c3111;
+	background-color:#d1bd79;
+	border:1vh solid #82553d;
+	font-size:4vh;
+	padding:0.5vw 1vw 0 1vw;
+	margin-top:1vh;
+}
+
+.input2 input{
+	font-size:4vh;
+	padding:0 1vw;
+	width:50vw;
+	height:7vh;
+	color:#9c3111;
+	background-color:#d1bd79;
+	border:1vh solid #82553d;
+	margin-left:auto;
+	font-weight: 700;
+	margin-bottom:27vh;
+}
+
+.crew{
+	margin-top:22vh;
+}
+
+.generate p{
+	width:16vw;
+	height:5vh;
+	position:absolute;
+	top:75vh;
+	right:25vw;
+	display:block;
+	color:#9c3111;
+	background-color:#d1bd79;
+	border:1vh solid #82553d;
+	font-size:4vh;
+	padding:1vw 1vw 0vw 1vw;
+	margin-top:-8vh;
+}
+
+@media (orientation:portrait) {
+    .background{
+        display: none;
+    }
+    #rotate-prompt{
+      display: block;
+	  visibility: visible;
+	  
+    }
+    body{
+      z-index: 50;
+      background-image: url("../assets/images/black.jpg");
+    }
 }
