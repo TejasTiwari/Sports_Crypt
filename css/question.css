@@ -130,6 +130,6 @@
     }
     body{
       z-index: 50;
-      background-image: url("black.jpg");
+      background-image: url("assets/images/black.jpg");
     }
 }
