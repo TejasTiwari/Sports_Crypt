@@ -82,19 +82,23 @@
   vertical-align: middle;
   margin: 5px 10px 5px 0;
   padding: 10px;
-  background-color: #fff;
+  background-color: #e6e695;
   border: 1px solid #ddd;
-  font-family: sans-serif;
+  font-family: "Caribbean Regular";
   font-size: 15px;
+  font-weight: bold;
 }
 
 .form-inline button {
 
-  padding: 10px 20px;
-  background-color: #0e7999;
+  padding: 5px 20px;
+  background-image: url("https://previews.123rf.com/images/vinsalow/vinsalow1705/vinsalow170500035/78590868-grunge-texture-background-hd-photo-light-yellow-wood-concept.jpg");
   border: 1px solid #ddd;
   border-radius: 5px;
-  color: white;
+  color: black;
+  font-weight: 600;
+  font-size:20px;
+  font-family: "Caribbean Regular";
   cursor: pointer;
 }
 
