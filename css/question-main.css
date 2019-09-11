@@ -5,15 +5,6 @@ body{
   overflow: hidden;
 }
 
-.fit { /* set relative picture size */
-      max-width: 100%;
-      max-height: 100%;
-  }
-  .center {
-      display: block;
-      margin: auto;
-  }
-
 #rotate-prompt{
   display: none;
   flex-direction: column;
@@ -31,10 +22,9 @@ body{
 }
 
 #background-image{
-  top:0vh;
+  top:0;
   position: absolute;
   z-index: 2;
-  background-size: cover;
   width:100%;
   height:100%;
 }
@@ -49,8 +39,8 @@ body{
 
 #map-close{
   z-index:200;
-  position: fixed;
-  opacity: 0.5;
+  position: absolute;
+  opacity: 0;
   width: 9vw;
   height: 8%;
   top:24.5vh;
@@ -75,13 +65,13 @@ body{
   cursor: pointer;
   top:6%;
   left:80%;
-  opacity:0.5 ;
+  opacity:0;
 }
 
 #character{
-  height:20vh;
-  top:50vh;
-  left:0%;
+  height:30%;
+  bottom:24%;
+  left:-4%;
   position: absolute;
   z-index:70;
 }
@@ -100,13 +90,12 @@ body{
   position: absolute;
   z-index: 20;
   opacity: 0.8;
-  width: 12vw;
-  bottom: 0%;
-  left:35%;
-  margin-bottom: 15px;
+  width: 11vw;
+  bottom: 2%;
+  left:42%;
   cursor: pointer;
   background-color: #e8d295;
-  border: 3px solid #a65733;
+  border: 2px solid #a65733;
   font-family: "Caribbean Regular";
   font-size: 3vw;
   font-weight: bold;
@@ -117,18 +106,19 @@ body{
   position: absolute;
   z-index:20;
   left:10%;
-  bottom: 49.5%;
+  top:15vh;
   width:65vw;
-  height:50vh;
+  height:80vh;
 }
 
 #dialogue{
-  width:100%;
-  top: 0%;
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
 
 #dialogue-text{
-  top:25%;
+  top:10%;
   left:13%;
   font-family: "Caribbean Regular";
   animation-delay: 8s
@@ -195,11 +185,190 @@ body{
   }
   }
 
-@media screen and (max-width:641px){
-  body{
-    font-size: 8px;
+@media (aspect-ratio: 4/3) {
+  #character {
+    bottom: 32%;
+    left:-8%;
   }
+
+#map{
+  top: 30vh;
+  left: 13vw;
 }
+#map-close{
+  top:36vh;
+  left: 61vw;
+  height:6%;
+}
+#map-button{
+  top:24%;
+  height:8%;
+  left: 82%;
+}
+#dialogue-cont{
+  top:25vh;
+  left:13%;
+  height:70vh;
+}
+#next{
+  bottom:20%;
+}
+}
+
+@media (aspect-ratio: 3/2) {
+  #character {
+    bottom: 18%;
+    left:-7%;
+    width: 17%;
+    height: auto;
+  }
+
+#map{
+  top: 30vh;
+  left: 13vw;
+}
+#map-close{
+  top:37vh;
+  left: 61vw;
+  height:6%;
+}
+#map-button{
+  top:23%;
+  height:9%;
+  left: 82%;
+}
+#dialogue-cont{
+  top:25vh;
+  left:13%;
+  height:70vh;
+}
+#next{
+  bottom:10%;
+}
+}
+
+@media (aspect-ratio: 16/10) {
+  #character {
+    bottom: 25%;
+    left:-4%;
+  }
+
+#map{
+  top: 30vh;
+  left: 13vw;
+}
+#map-close{
+  top:38vh;
+  left: 61vw;
+  height:6%;
+}
+#map-button{
+  top:22%;
+  height:10%;
+  left: 82%;
+}
+#dialogue-cont{
+  top:22vh;
+  left:11%;
+  height:70vh;
+}
+#next{
+  bottom:8%;
+}
+}
+
+@media (aspect-ratio: 17/10) {
+  #character {
+    bottom: 20%;
+    left:-4%;
+
+}
+#map{
+  top: 30vh;
+  left: 13vw;
+}
+#map-close{
+  top:38vh;
+  left: 61vw;
+  height:6%;
+}
+#map-button{
+  top:22%;
+  height:10%;
+  left: 82%;
+}
+#dialogue-cont{
+  top:20vh;
+  left:11%;
+  height:70vh;
+}
+#next{
+  bottom:5%;
+}
+}
+
+@media (aspect-ratio: 16/9) {
+  #character {
+    bottom:18%;
+    left:-4%;
+  }
+
+#map{
+  top: 25vh;
+  left: 13vw;
+}
+#map-close{
+  top:33vh;
+  left: 61vw;
+  height:6%;
+}
+#map-button{
+  top:17%;
+  height:10%;
+  left: 82%;
+}
+#dialogue-cont{
+  top:18vh;
+  left:11%;
+  height:70vh;
+}
+#next{
+  bottom:2%;
+}
+}
+
+@media (aspect-ratio: 2436/1125) {
+  #character {
+    bottom:0%;
+    left:-3%;
+    width:10%;
+    height:auto;
+  }
+
+#map{
+  top: 15vh;
+  left: 13vw;
+}
+#map-close{
+  top:26vh;
+  left: 61vw;
+  height:6%;
+}
+#map-button{
+  top:4%;
+  height:14%;
+  left: 82%;
+}
+#dialogue-cont{
+  top:10vh;
+  left:11%;
+  height:70vh;
+}
+#next{
+  bottom:-25%;
+}
+}
+
 @media (orientation:portrait) {
     .container {
         display: none;
