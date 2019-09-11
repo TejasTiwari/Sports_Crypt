@@ -11,6 +11,17 @@
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" language="JavaScript">
       
+      
+      
+      window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+      
+      
+      
+      
     jQuery(document).ready(function() {
 
     jQuery('body').animate({scrollTop: +400}, 1000);
