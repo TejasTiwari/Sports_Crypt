@@ -7,23 +7,9 @@
     <title>SportsCrypt</title>
     <link rel="stylesheet" href="css/question-main.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
+
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" language="JavaScript">
-         
-    $(function(){
-      $('#next').on('click',function(){
-        window.location.replace("question-1.html");
-      });
-    });
-
-    function set_body_height() { // set body height = window height
-      $('body').height($(window).height());
-    }
-    $(document).ready(function() {
-        $(window).bind('resize', set_body_height);
-        set_body_height();
-  });
 
 
   function reset_animation() {
@@ -67,10 +53,10 @@
 
   <body>
 
-    <div id="rotate-prompt">
+   <div id="rotate-prompt">
     <img src="assets/images/rotate-screen.gif">
     <p>Please play the game in landscape mode!</p>
-    </div> 
+    </div>
 
      <div class="container">
       <img id="background-image" class= "center fit" src="assets/images/First Background edit.jpg">
