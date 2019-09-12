@@ -5,6 +5,23 @@ body{
   overflow: hidden;
 }
 
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/images/First Background edit.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #rotate-prompt{
   display: none;
   flex-direction: column;
